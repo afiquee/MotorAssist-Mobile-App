@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "313439380784",
+    "firebase_url": "https://motorcycleassist-d7d26.firebaseio.com",
+    "project_id": "motorcycleassist-d7d26",
+    "storage_bucket": "motorcycleassist-d7d26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313439380784:android:8f2b8ef24c8cf94f",
+        "android_client_info": {
+          "package_name": "com.afiq.motorcycleassist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313439380784-s9or5h54hvamleodcboi635ug2sdvctp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.afiq.motorcycleassist",
+            "certificate_hash": "699ee7f3d392149efd73887b63cbed781aac5a06"
+          }
+        },
+        {
+          "client_id": "313439380784-d6g5uj1n7g5q07qiedk1ijdrdqpbfrnf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlzCWuyxApv09WoR2rGHN2Hg5GptghX70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313439380784-d6g5uj1n7g5q07qiedk1ijdrdqpbfrnf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

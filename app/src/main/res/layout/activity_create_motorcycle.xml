@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.7dp"
+        android:layout_marginLeft="28.7dp"
+        android:layout_marginRight="28.9dp"
+        android:text="Type"
+        android:id="@+id/spinnerType"></Spinner>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.7dp"
+        android:layout_marginLeft="28.7dp"
+        android:layout_marginRight="28.9dp"
+        android:text="Brand"
+        android:id="@+id/spinnerBrand"></Spinner>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Model"
+        android:layout_marginLeft="28.7dp"
+        android:layout_marginRight="28.9dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/model" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Plate Number"
+        android:layout_marginLeft="28.7dp"
+        android:layout_marginRight="28.9dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/plate" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.7dp"
+        android:text="Front Tyre Type"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28.7dp"
+        android:layout_marginRight="28.9dp"
+        android:id="@+id/front"
+        android:checkedButton="@+id/ftube"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/ftube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tube"/>
+        <RadioButton
+            android:id="@+id/ftubeless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tubeless"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30.7dp"
+        android:text="Rear Tyre Type"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28.7dp"
+        android:layout_marginRight="28.9dp"
+        android:id="@+id/rear"
+        android:checkedButton="@+id/rtube"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rtube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tube"/>
+        <RadioButton
+            android:id="@+id/rtubeless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tubeless"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28.7dp"
+        android:layout_marginLeft="28.7dp"
+        android:layout_marginRight="28.9dp"
+        android:text="CREATE"
+        android:background="@drawable/gradient"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/create"/>
+
+
+</LinearLayout>

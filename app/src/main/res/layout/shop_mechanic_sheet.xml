@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shopMechanicSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="150dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/slide"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rahman Rahim"
+                android:id="@+id/rname"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/requestStatus"
+                    android:text="Requesting Help" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#5d5d5d" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 min away (4 km)"
+                android:id="@+id/rdistance"
+                android:textColor="#5692F5" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="#5d5d5d" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:id="@+id/mcallRequester"
+                android:onClick="onClick">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/telephone"
+                   >
+
+                </ImageView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Call"
+                    android:textColor="#5692F5" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Service"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/quantum_grey"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Service Type"
+                    android:textSize="11dp"
+                    android:textColor="@color/quantum_grey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/service"
+                    android:text="Towing"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Additional Info"
+                    android:textSize="11dp"
+                    android:textColor="@color/quantum_grey"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/additional"
+                    android:text="NA"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Traveling Charge"
+                    android:layout_marginTop="7dp"
+                    android:textSize="11dp"
+                    android:textColor="@color/quantum_grey"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RM 5"
+                    android:id="@+id/travelCharge"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Service Charge"
+                    android:layout_marginTop="7dp"
+                    android:textSize="11dp"
+                    android:textColor="@color/quantum_grey"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RM 5"
+                    android:id="@+id/serviceCharge"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Charge"
+                    android:layout_marginTop="7dp"
+                    android:textSize="11dp"
+                    android:textColor="@color/quantum_grey"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RM 15"
+                    android:id="@+id/total"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/newTotalLayout"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Total Charge"
+                        android:layout_marginTop="7dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/quantum_grey"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RM 15"
+                        android:id="@+id/newTotal"
+                        android:textSize="13dp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Motorcycle Type"
+                    android:layout_marginTop="22dp"
+                    android:textSize="11dp"
+                    android:textColor="@color/quantum_grey"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scooter"
+                    android:id="@+id/motorType"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Motorcycle Plate"
+                    android:layout_marginTop="7dp"
+                    android:textSize="11dp"
+                    android:textColor="@color/quantum_grey"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KDX 7860"
+                    android:id="@+id/plate"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Motorcycle"
+                    android:layout_marginTop="7dp"
+                    android:textSize="11dp"
+                    android:textColor="@color/quantum_grey"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YAMAHA 135LC"
+                    android:id="@+id/motor"
+                    android:textSize="13dp"
+                    android:textColor="@color/black"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/negotiateInfo"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="50dp"
+                android:hint="Set Fixed Service Charge"
+                android:layout_marginLeft="10dp">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:id="@+id/setServiceCharge"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/negotiateButton"
+                android:visibility="visible"
+                android:layout_marginTop="15dp">
+
+
+                <Button
+
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28.7dp"
+                    android:layout_marginRight="28.9dp"
+                    android:text="ACCEPT"
+                    android:layout_gravity="left"
+                    android:background="@drawable/gradient"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/acceptNegotiate"/>
+
+                <Button
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="28.7dp"
+                    android:layout_marginRight="28.9dp"
+                    android:text="DECLINE"
+                    android:layout_gravity="right"
+                    android:background="@drawable/gradient_red"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/declineNegotiate"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/requestButton"
+            android:visibility="gone"
+            android:layout_marginTop="15dp">
+
+            <Button
+
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28.7dp"
+                android:layout_marginRight="28.9dp"
+                android:text="ACCEPT"
+                android:layout_gravity="left"
+                android:background="@drawable/gradient"
+                android:layout_margin="20dp"
+                android:textColor="@color/white"
+                android:id="@+id/accept"/>
+
+            <Button
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28.7dp"
+                android:layout_marginRight="28.9dp"
+                android:text="DECLINE"
+                android:layout_gravity="right"
+                android:background="@drawable/gradient_red"
+                android:layout_margin="20dp"
+                android:textColor="@color/white"
+                android:id="@+id/decline"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/headOutButton"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="HEAD OUT"
+                android:background="@drawable/gradient"
+                android:textColor="@color/white"
+                android:id="@+id/headOut"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:id="@+id/completedButton"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="CLOSE"
+                android:background="@drawable/gradient"
+                android:textColor="@color/white"
+                android:id="@+id/close"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/inAssist"
+            android:visibility="gone"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28.7dp"
+                android:layout_marginRight="28.9dp"
+                android:text="ARRIVED"
+                android:layout_gravity="right"
+                android:background="@drawable/gradient"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:id="@+id/arrived"/>
+
+            <Button
+
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28.7dp"
+                android:layout_marginRight="28.9dp"
+                android:text="DIRECTION"
+                android:layout_gravity="left"
+                android:background="@drawable/gradient"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:id="@+id/go"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/towingInfo"
+            android:visibility="gone"
+            android:layout_marginTop="15dp">
+
+
+            <Button
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28.7dp"
+                android:layout_marginRight="28.9dp"
+                android:text="COMPLETED"
+                android:layout_gravity="right"
+                android:background="@drawable/gradient"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:id="@+id/completed"/>
+
+            <Button
+
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28.7dp"
+                android:layout_marginRight="28.9dp"
+                android:text="DIRECTION"
+                android:layout_gravity="left"
+                android:background="@drawable/gradient"
+                android:layout_margin="10dp"
+                android:textColor="@color/white"
+                android:id="@+id/goShop"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

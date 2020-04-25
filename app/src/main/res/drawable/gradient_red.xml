@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <!--  Gradient Bg for listrow -->
+            <gradient
+                android:startColor="#028ac3"
+                android:centerColor="#0c9ca7"
+                android:endColor="#16a885"
+
+                android:type="linear"
+                />
+
+            <corners
+                android:radius="20dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <!--  Gradient Bg for listrow -->
+            <gradient
+                android:startColor="#ff5454"
+                android:centerColor="#ff3030"
+                android:endColor="#f00000"
+                android:type="linear"
+                />
+
+            <corners
+                android:radius="20dp"/>
+        </shape>
+    </item>
+</selector>

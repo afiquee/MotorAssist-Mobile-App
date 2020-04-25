@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/frame"
+        android:layout_height="match_parent">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textSize="10dp"
+                android:text="REQUEST"
+                android:layout_margin="10dp"
+                android:background="@drawable/gradient"
+                android:textColor="@color/white"
+                android:id="@+id/breakdown"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:id="@+id/goodSamaritan"
+                android:text="Good Samaritan"/>
+
+            <Switch
+                android:id="@+id/goodSamaritanSwitch"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="No motorcycle selected"
+                        android:id="@+id/mymotor"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/mybreakdown"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="28.7dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="28.9dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/requesting"
+                android:visibility="gone"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Requesting Help..."
+                        android:layout_margin="10dp"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        android:textAlignment="center"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28.7dp"
+                        android:layout_marginRight="28.9dp"
+                        android:text="CANCEL"
+                        android:background="@drawable/gradient_red"
+                        android:layout_margin="20dp"
+                        android:textColor="@color/white"
+                        android:id="@+id/cancel"/>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="28.7dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="28.9dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/requestInfo"
+                android:visibility="gone"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shop Name"
+                        android:id="@+id/rname"
+                        android:layout_margin="10dp"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/rdistance"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="0124651303"
+                        android:id="@+id/mechname"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="0124651303"
+                        android:id="@+id/mechphone"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="shop@gmail.com"
+                        android:id="@+id/mechemail"
+                        android:gravity="left"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="28.7dp"
+                android:layout_marginRight="28.9dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/rserviceInfo"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Services"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Service : Towing"
+                        android:id="@+id/rservice"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Travel Cost: RM20"
+                        android:id="@+id/rtravelCharge"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Service Cost: RM20"
+                        android:id="@+id/rserviceCharge"
+                        android:gravity="left"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="TOTAL : RM40"
+                        android:id="@+id/rtotal"
+                        android:textSize="14dp"
+                        android:gravity="left"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Status : Request Accepted"
+                        android:id="@+id/status"
+                        android:textSize="14dp"
+                        android:gravity="left"/>
+
+                    <androidx.coordinatorlayout.widget.CoordinatorLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/completedButton"
+                        android:visibility="gone"
+                        android:layout_marginTop="15dp">
+
+                        <Button
+
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="28.7dp"
+                            android:layout_marginRight="28.9dp"
+                            android:gravity="center"
+                            android:text="CLOSE"
+                            android:layout_gravity="center"
+                            android:background="@drawable/gradient"
+                            android:layout_margin="20dp"
+                            android:textColor="@color/white"
+                            android:id="@+id/close"/>
+
+
+
+                    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/negotiationInfo"
+                        android:visibility="gone"
+                        android:layout_marginTop="15dp">
+
+                        <Button
+
+                            android:layout_width="135dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_height="wrap_content"
+                            android:text="ACCEPT"
+                            android:layout_gravity="left"
+                            android:background="@drawable/gradient"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/white"
+                            android:id="@+id/accept"/>
+
+                        <Button
+                            android:layout_width="135dp"
+                            android:layout_marginLeft="45dp"
+                            android:layout_height="wrap_content"
+                            android:text="DECLINE"
+                            android:layout_gravity="right"
+                            android:background="@drawable/gradient_red"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/white"
+                            android:id="@+id/decline"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="28.7dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="28.9dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/shopInfo"
+                android:visibility="gone"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shop Name"
+                        android:id="@+id/name"
+                        android:layout_margin="10dp"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/distance"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="0124651303"
+                        android:id="@+id/phone"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="shop@gmail.com"
+                        android:id="@+id/email"
+                        android:gravity="left"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Monday,Tuesday,Wednesday,Friday,Saturday"
+                        android:id="@+id/days"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="(10.00 AM - 7.00 PM)"
+                        android:id="@+id/hours"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="left"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28.7dp"
+                        android:layout_marginRight="28.9dp"
+                        android:text="TOW HERE"
+                        android:visibility="gone"
+                        android:background="@drawable/gradient"
+                        android:layout_margin="20dp"
+                        android:textColor="@color/white"
+                        android:id="@+id/towHere"/>
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="28.7dp"
+                android:layout_marginRight="28.9dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/serviceInfo"
+                android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Services"
+                        android:textSize="16dp"
+                        android:gravity="center"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Service : Towing"
+                        android:id="@+id/service"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Travel Cost: RM20"
+                        android:id="@+id/travelCost"
+                        android:gravity="left"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Service Cost: RM20"
+                        android:id="@+id/serviceCost"
+                        android:gravity="left"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="TOTAL : RM40"
+                        android:id="@+id/total"
+                        android:textSize="14dp"
+                        android:gravity="left"/>
+
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28.7dp"
+                        android:layout_marginRight="28.9dp"
+                        android:text="REQUEST"
+                        android:background="@drawable/gradient"
+                        android:layout_margin="20dp"
+                        android:textColor="@color/white"
+                        android:id="@+id/request"/>
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+    <include layout="@layout/bottom_sheet"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    >
+
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@mipmap/home"
+        app:showAsAction="always|withText"
+        app:labelVisibilityMode="labeled"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/action_request"
+        android:icon="@mipmap/help"
+        app:showAsAction="always|withText"
+        app:labelVisibilityMode="labeled"
+        android:title="Request" />
+
+    <item
+        android:id="@+id/action_history"
+        android:enabled="true"
+        app:showAsAction="always|withText"
+        android:icon="@mipmap/history"
+        app:labelVisibilityMode="labeled"
+        android:title="History"/>
+    <item
+        android:id="@+id/action_account"
+        android:enabled="true"
+        app:showAsAction="always|withText"
+        android:icon="@mipmap/account"
+        app:labelVisibilityMode="labeled"
+        android:title="Account"/>
+
+</menu>

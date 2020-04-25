@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "motorcycleassist-d7d26",
+  "private_key_id": "89302d94826f4f5a1cfacea1908215068bafac0b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDARiYuxg5ZGKXF\n5QVFLlizYNJszodUWEa3onUGEovQ475nU1hstSzSUB/o0Iv3oNAJXmrd1ACtNwMB\nAoNCoO4mxkyvZTXIaajrM1BUTaRP64GL0ijMu3ad8VDt7pAofQHUrhMjxGJ7NmbQ\nRV6i+hzNc4R3jOUIWOEelS/mF24G9V5ArRvb8urRObU77a8PrT/2edB6usP+QSBC\ncS2f7hj8+cZv3hN4X5nJEZYWrgBgKB3r9/jW5BZv71SrAuEBWCvxnT17s6p/DtIX\nBaIZWl+MV7XDWiiBKkI53rjD9rGcMJ20h3gaqArSFuCAIU0xlnginVWKB7V9KQnk\neNxYhd7pAgMBAAECggEAJCtuFmFypIcS9EHLdoKr8/6URxyo75B1qSjZ+8z0WVTm\nZhiTK0v/xQaGoizND8XELOcCkn1FrVAKdB+tYpTUiB3IojwXXH6n5KrwAxPiA5jJ\nc2yS+USQoVCaiU/V9Y/ijsg6WIGihwwqViaekWkcjveapUSvdx0FKFQnQREKRSuC\n2Q/L+G82x9nbyrO1NLfPhcNg8Xqkit0VZ/30j6eIOdyXn6wj3HFm9r6xo7KgiK8Y\nO7FlWpVOwGxPCvKsJpg+VfGoMECPn5MQ1VDJfmjx1Mu/U2zXOAgKgJ35fCClJi4S\n3dkpQryW/0dSUYFW9qY19ufgsQHkHj3H93/XakFbiwKBgQDerWwB9aORFxSCZQUG\nRdNvKEWyvDJ0mzVApF9GPMMtXWhi7OVsJeNFBAJa9+qag/qNxIt7LgX0eV0agtmR\nzkqJ8g+4HuvbVFA4+rSKZ0oqSOuJKp01YEVd1x6awnI2C5KT4tObYuUSmr5wCJJM\nzD8YoYSr0IdPkQPPQfKh34vMNwKBgQDdC//I1s4dny3gFxKF9PgDYHk6VIFP1/Xj\nZSVWtKhVHHZPxOJMq9zZKeajUharskLpQAxb2tXHOeZt9cAHgMnw0WHZgO/4nGMJ\nhhncpYB37I+19pThgHLhvCTQf7P8rJ06QUBDAf/LpacAVG52ru2wEdS33i5X0gEn\n9h4Nfmld3wKBgQCrK9Bc6UAk5gMEATeNjNttFR4OuRBoBm83E6ORUGAQXT9C3Cu3\nqKA9i0lsOCsFP/K4S5+UvtohBbIGERPCOzudMo/Wzx4q6XMJed6Sjbe7LXaxaCqU\nvz5TVmvWNyaoWNkCCVj0l17ToFRHtq8Pjenquy5LDO8WwLiW93DV8gt6nQKBgCTQ\nkco+VFfEohxXW2NqGEBfufEID/1fR3mW5/AX6I08T0wby2DfosmcW+hJjLMN3m0A\nmM5XlRE4SHN54YCeZ4OvK6/Q9KagTTJR3k7MVagjgw/YQJWKEhgcgLkk+7ISgaEp\nKu2+EH83WKgKZ9dmbPnNDnONEoTX2g9wwzKWIjBbAoGBAKWEM0TSPsSUDX/EMeCi\nPSvMB0SK9BgI8U6AKZskLaU/cg4TSVZKoba72MDjgZy2CLEJqcBr4jSI+/RSI1cs\nZAEvXGW81aY+LQAlbztBwTHUOeijZBGMNmCxDrKXfBXoTJal0fII4+bWC5ev8DgM\n1balZr1N1q6Q5pXwMQwKvswr\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-50vjl@motorcycleassist-d7d26.iam.gserviceaccount.com",
+  "client_id": "118110048212276309911",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-50vjl%40motorcycleassist-d7d26.iam.gserviceaccount.com"
+}

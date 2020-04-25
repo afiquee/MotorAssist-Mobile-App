@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:background="@drawable/bg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewHead"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="REGISTER MOTORCYCLE"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.7dp"
+            android:layout_marginLeft="28.7dp"
+            android:layout_marginRight="28.9dp"
+            android:text="Type"
+            android:id="@+id/spinnerType"></Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32.7dp"
+            android:layout_marginRight="28.9dp"
+            android:textColor="@color/red"
+            android:id="@+id/eType">
+
+        </TextView>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.7dp"
+            android:layout_marginLeft="28.7dp"
+            android:layout_marginRight="28.9dp"
+            android:text="Brand"
+            android:id="@+id/spinnerBrand"></Spinner>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32.7dp"
+            android:layout_marginRight="28.9dp"
+            android:textColor="@color/red"
+            android:id="@+id/eBrand">
+
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Model"
+            android:layout_marginLeft="28.7dp"
+            android:layout_marginRight="28.9dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/model" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32.7dp"
+            android:layout_marginRight="28.9dp"
+            android:textColor="@color/red"
+            android:id="@+id/eModel">
+
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Plate Number"
+            android:layout_marginLeft="28.7dp"
+            android:layout_marginRight="28.9dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/plate" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32.7dp"
+            android:layout_marginRight="28.9dp"
+            android:textColor="@color/red"
+            android:id="@+id/ePlate">
+
+        </TextView>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28.7dp"
+            android:layout_marginLeft="28.7dp"
+            android:layout_marginRight="28.9dp"
+            android:text="REGISTER"
+            android:background="@drawable/gradient"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/create"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

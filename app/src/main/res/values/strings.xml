@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MotorcycleAssist</string>
+    <string name="title_activity_rider_map">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="google_map_api_key">AIzaSyBrpXdMXjG17XGj45NJ9HJhfGvdGjjt6eE</string>
+    <string name="title_activity_shop_register">ShopRegisterActivity</string>
+    <string name="title_activity_shop_register_acitivty">ShopRegisterAcitivty</string>
+    <string name="title_activity_shop_register_map">Map</string>
+    <string name="fcm_token">FCM Token: %s</string>
+    <string name="fcm_server_key">AAAASPpxZTA:APA91bEz2NvXG4-xCJ2hjDX1cVIOmzqx3lhzE3pKKAujRxztRUsF9F0rY0TwZFSPUd-xGIdyQFq-XAzvZIiY2QPcmI1XRJ-LH7QieWVLY3RN8_uI7uFofzGRpLIN9-PmSvyHvZCKoC4C</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

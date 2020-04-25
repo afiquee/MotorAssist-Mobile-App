@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gsRequestSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="150dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    android:layout_marginTop="10dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="14dp"
+            android:textColor="@color/quantum_grey"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Type"
+            android:textSize="11dp"
+            android:textColor="@color/quantum_grey"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gsrName"
+            android:text="Towing"
+            android:textSize="13dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/quantum_grey"
+            android:text="Destination"
+            android:layout_marginTop="7dp"
+            android:textSize="11dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AKH Motorworks"
+            android:id="@+id/gsrDestination"
+            android:textSize="13dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Towing Distance"
+            android:layout_marginTop="7dp"
+            android:textSize="11dp"
+            android:textColor="@color/quantum_grey"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gsrDistance"
+            android:text="3 km"
+            android:textSize="13dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Distance"
+            android:layout_marginTop="7dp"
+            android:textSize="11dp"
+            android:textColor="@color/quantum_grey"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 km"
+            android:id="@+id/gsrRequesterDistance"
+            android:textSize="13dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Requester Name"
+            android:layout_marginTop="22dp"
+            android:textSize="11dp"
+            android:textColor="@color/quantum_grey"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mohd Afiq"
+            android:id="@+id/gsrRequesterName"
+            android:textSize="13dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Motorcycle Type"
+            android:textSize="11dp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/quantum_grey"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:id="@+id/gsrMotorType"
+            android:textSize="13dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Motorcycle Plate"
+            android:textSize="11dp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/quantum_grey"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KDL 4012"
+            android:id="@+id/gsrMotorPlate"
+            android:textSize="13dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Motorcycle Model"
+            android:textSize="11dp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/quantum_grey"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yamaha 135LC"
+            android:id="@+id/gsrMotorModel"
+            android:textSize="13dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="ACCEPT"
+            android:background="@drawable/gradient"
+            android:textColor="@color/white"
+            android:id="@+id/gsAccept"/>
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="DECLINE"
+            android:background="@drawable/gradient_red"
+            android:textColor="@color/white"
+            android:id="@+id/gsDecline"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/headOutButton"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="Head Out"
+            android:background="@drawable/gradient"
+            android:textColor="@color/white"
+            android:id="@+id/headOut"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
