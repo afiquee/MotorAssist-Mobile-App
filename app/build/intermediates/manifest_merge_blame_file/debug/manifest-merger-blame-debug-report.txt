@@ -1,0 +1,396 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.afiq.motorcycleassist"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml
+10    <!--
+11         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+12         Google Maps Android API v2, but you must specify either coarse or fine
+13         location permissions for the 'MyLocation' functionality.
+14    -->
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:9:5-79
+15-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:10:5-81
+16-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:10:22-78
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:11:5-67
+17-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:11:22-64
+18    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+18-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:12:5-82
+18-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:12:22-79
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:13:5-68
+19-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:13:22-65
+20    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+20-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:14:5-75
+20-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:14:22-72
+21    <uses-permission android:name="android.permission.CALL_PHONE" />
+21-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:15:5-69
+21-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:15:22-66
+22    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Include required permissions for Google Maps API to run. -->
+22-->[com.google.android.libraries.places:places:2.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\7b286a9a6fc3251023b4d14d518f7d53\places-2.0.0\AndroidManifest.xml:10:5-76
+22-->[com.google.android.libraries.places:places:2.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\7b286a9a6fc3251023b4d14d518f7d53\places-2.0.0\AndroidManifest.xml:10:22-73
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+23-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\a80e9edbb7b0bb80f4cd03e2f573e1f2\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+23-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\a80e9edbb7b0bb80f4cd03e2f573e1f2\play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+24
+25    <uses-feature
+25-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\a80e9edbb7b0bb80f4cd03e2f573e1f2\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+26        android:glEsVersion="0x00020000"
+26-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\a80e9edbb7b0bb80f4cd03e2f573e1f2\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+27        android:required="true" />
+27-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\a80e9edbb7b0bb80f4cd03e2f573e1f2\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+28
+29    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+29-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:26:5-110
+29-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:26:22-107
+30
+31    <application
+31-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:17:5-85:19
+32        android:allowBackup="true"
+32-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:18:9-35
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.1.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\9b282167d5edf2ce15b1570bf9b055c0\core-1.1.0\AndroidManifest.xml:24:18-86
+34        android:debuggable="true"
+35        android:icon="@mipmap/logo2"
+35-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:19:9-37
+36        android:label="@string/app_name"
+36-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:20:9-41
+37        android:roundIcon="@mipmap/ic_launcher_round"
+37-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:21:9-54
+38        android:supportsRtl="true"
+38-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:22:9-35
+39        android:testOnly="true"
+40        android:theme="@style/AppTheme" >
+40-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:23:9-40
+41        <activity android:name="com.afiq.motorcycleassist.RestrictedActivity" />
+41-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:24:9-65
+41-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:24:19-53
+42        <activity android:name="com.afiq.motorcycleassist.AdminActivity" />
+42-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:25:9-51
+42-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:25:19-48
+43        <activity android:name="com.afiq.motorcycleassist.ShopActivity" />
+43-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:26:9-50
+43-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:26:19-47
+44        <activity android:name="com.afiq.motorcycleassist.SelectRoleActivity" />
+44-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:27:9-56
+44-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:27:19-53
+45        <activity android:name="com.afiq.motorcycleassist.MechanicActivity" />
+45-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:28:9-54
+45-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:28:19-51
+46        <activity android:name="com.afiq.motorcycleassist.MotorcyclistActivity" />
+46-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:29:9-58
+46-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:29:19-55
+47        <activity android:name="com.afiq.motorcycleassist.SelectBreakdownActivity" />
+47-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:30:9-61
+47-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:30:19-58
+48        <activity android:name="com.afiq.motorcycleassist.MotorcyclistRegisterActivity" />
+48-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:31:9-66
+48-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:31:19-63
+49        <activity android:name="com.afiq.motorcycleassist.ShopHomeActivity" />
+49-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:32:9-54
+49-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:32:19-51
+50        <activity android:name="com.afiq.motorcycleassist.WorkingActivity" />
+50-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:33:9-53
+50-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:33:19-50
+51        <activity android:name="com.afiq.motorcycleassist.MechanicHomeActivity" />
+51-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:34:9-58
+51-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:34:19-55
+52        <activity android:name="com.afiq.motorcycleassist.MechanicRegisterActivity" />
+52-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:35:9-62
+52-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:35:19-59
+53        <activity android:name="com.afiq.motorcycleassist.MechanicLoginActivity" />
+53-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:36:9-59
+53-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:36:19-56
+54        <activity android:name="com.afiq.motorcycleassist.ShopInfoWindow" />
+54-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:37:9-52
+54-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:37:19-49
+55        <activity android:name="com.afiq.motorcycleassist.MotorcycleBreakdownActivity" />
+55-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:38:9-65
+55-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:38:19-62
+56        <activity android:name="com.afiq.motorcycleassist.MenuActivity" />
+56-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:39:9-50
+56-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:39:19-47
+57        <!--
+58             The API key for Google Maps-based APIs is defined as a string resource.
+59             (See the file "res/values/google_maps_api.xml").
+60             Note that the API key is linked to the encryption key used to sign the APK.
+61             You need a different API key for each encryption key, including the release key that is used to
+62             sign the APK for publishing.
+63             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+64        -->
+65        <meta-data
+65-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:48:9-50:55
+66            android:name="com.google.android.geo.API_KEY"
+66-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:49:13-58
+67            android:value="@string/google_maps_key" />
+67-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:50:13-52
+68
+69        <activity
+69-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:52:9-54:72
+70            android:name="com.afiq.motorcycleassist.ShopRegisterMapActivity"
+70-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:53:13-52
+71            android:label="@string/title_activity_shop_register_map" />
+71-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:54:13-69
+72        <activity android:name="com.afiq.motorcycleassist.ShopRegisterActivity" />
+72-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:55:9-58
+72-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:55:19-55
+73        <activity android:name="com.afiq.motorcycleassist.ShopLoginActivity" />
+73-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:56:9-55
+73-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:56:19-52
+74        <activity android:name="com.afiq.motorcycleassist.SelectHelpActivity" />
+74-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:57:9-56
+74-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:57:19-53
+75        <activity android:name="com.afiq.motorcycleassist.CreateMotorcycleActivity" />
+75-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:58:9-62
+75-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:58:19-59
+76        <activity android:name="com.afiq.motorcycleassist.MotorcycleListActivity" />
+76-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:59:9-60
+76-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:59:19-57
+77        <activity android:name="com.afiq.motorcycleassist.ShopListActivity" />
+77-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:60:9-54
+77-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:60:19-51
+78        <activity
+78-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:61:9-63:60
+79            android:name="com.afiq.motorcycleassist.MapsActivity2"
+79-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:62:13-42
+80            android:label="@string/title_activity_maps2" />
+80-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:63:13-57
+81        <activity android:name="com.afiq.motorcycleassist.ShopMapActivity" />
+81-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:64:9-53
+81-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:64:19-50
+82        <activity
+82-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:65:9-67:59
+83            android:name="com.afiq.motorcycleassist.MapsActivity"
+83-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:66:13-41
+84            android:label="@string/title_activity_maps" />
+84-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:67:13-56
+85        <activity
+85-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:68:9-70:64
+86            android:name="com.afiq.motorcycleassist.MotorcyclistMapActivity"
+86-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:69:13-52
+87            android:label="@string/title_activity_rider_map" />
+87-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:70:13-61
+88        <activity android:name="com.afiq.motorcycleassist.LoginActivity" />
+88-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:71:9-51
+88-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:71:19-48
+89        <activity android:name="com.afiq.motorcycleassist.MainActivity" >
+89-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:72:9-78:20
+89-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:72:19-47
+90            <intent-filter>
+90-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:73:13-77:29
+91                <action android:name="android.intent.action.MAIN" />
+91-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:74:17-69
+91-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:74:25-66
+92
+93                <category android:name="android.intent.category.LAUNCHER" />
+93-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:76:17-77
+93-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:76:27-74
+94            </intent-filter>
+95        </activity>
+96
+97        <service android:name="com.afiq.motorcycleassist.Service.MyFirebaseMessagingService" >
+97-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:80:9-84:19
+97-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:80:18-68
+98            <intent-filter>
+98-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:81:13-83:29
+99                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+99-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:82:17-78
+99-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:82:25-75
+100            </intent-filter>
+101        </service>
+102        <!-- Autocomplete -->
+103        <activity
+103-->[com.google.android.libraries.places:places:2.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\7b286a9a6fc3251023b4d14d518f7d53\places-2.0.0\AndroidManifest.xml:16:9-23:20
+104            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+104-->[com.google.android.libraries.places:places:2.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\7b286a9a6fc3251023b4d14d518f7d53\places-2.0.0\AndroidManifest.xml:17:13-91
+105            android:exported="false"
+105-->[com.google.android.libraries.places:places:2.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\7b286a9a6fc3251023b4d14d518f7d53\places-2.0.0\AndroidManifest.xml:18:13-37
+106            android:hardwareAccelerated="true"
+106-->[com.google.android.libraries.places:places:2.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\7b286a9a6fc3251023b4d14d518f7d53\places-2.0.0\AndroidManifest.xml:19:13-47
+107            android:label="@string/places_autocomplete_label"
+107-->[com.google.android.libraries.places:places:2.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\7b286a9a6fc3251023b4d14d518f7d53\places-2.0.0\AndroidManifest.xml:20:13-62
+108            android:theme="@style/PlacesAutocompleteThemeOverlay"
+108-->[com.google.android.libraries.places:places:2.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\7b286a9a6fc3251023b4d14d518f7d53\places-2.0.0\AndroidManifest.xml:21:13-66
+109            android:windowSoftInputMode="stateAlwaysVisible|adjustPan" >
+109-->[com.google.android.libraries.places:places:2.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\7b286a9a6fc3251023b4d14d518f7d53\places-2.0.0\AndroidManifest.xml:22:13-71
+110        </activity> <!-- Needs to be explicitly declared on P+ -->
+111        <uses-library
+111-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\a80e9edbb7b0bb80f4cd03e2f573e1f2\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+112            android:name="org.apache.http.legacy"
+112-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\a80e9edbb7b0bb80f4cd03e2f573e1f2\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+113            android:required="false" />
+113-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\a80e9edbb7b0bb80f4cd03e2f573e1f2\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+114
+115        <service
+115-->[com.google.firebase:firebase-database:18.0.1] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\108d8d03c02c4ba8a9a9cc659fb38bb5\firebase-database-18.0.1\AndroidManifest.xml:29:9-35:19
+116            android:name="com.google.firebase.components.ComponentDiscoveryService"
+116-->[com.google.firebase:firebase-database:18.0.1] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\108d8d03c02c4ba8a9a9cc659fb38bb5\firebase-database-18.0.1\AndroidManifest.xml:30:13-84
+117            android:exported="false" >
+117-->[com.google.firebase:firebase-database:18.0.1] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\108d8d03c02c4ba8a9a9cc659fb38bb5\firebase-database-18.0.1\AndroidManifest.xml:31:13-37
+118            <meta-data
+118-->[com.google.firebase:firebase-database:18.0.1] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\108d8d03c02c4ba8a9a9cc659fb38bb5\firebase-database-18.0.1\AndroidManifest.xml:32:13-34:85
+119                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+119-->[com.google.firebase:firebase-database:18.0.1] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\108d8d03c02c4ba8a9a9cc659fb38bb5\firebase-database-18.0.1\AndroidManifest.xml:33:17-109
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-database:18.0.1] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\108d8d03c02c4ba8a9a9cc659fb38bb5\firebase-database-18.0.1\AndroidManifest.xml:34:17-82
+121            <meta-data
+121-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\3412e4fa714470d3c3e3238ac26160d6\firebase-auth-18.1.0\AndroidManifest.xml:36:13-38:85
+122                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+122-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\3412e4fa714470d3c3e3238ac26160d6\firebase-auth-18.1.0\AndroidManifest.xml:37:17-109
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\3412e4fa714470d3c3e3238ac26160d6\firebase-auth-18.1.0\AndroidManifest.xml:38:17-82
+124            <meta-data
+124-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\916b74ccb02fbf8f9fd48d031ee93665\play-services-measurement-api-17.0.0\AndroidManifest.xml:30:13-32:85
+125                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+125-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\916b74ccb02fbf8f9fd48d031ee93665\play-services-measurement-api-17.0.0\AndroidManifest.xml:31:17-139
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\916b74ccb02fbf8f9fd48d031ee93665\play-services-measurement-api-17.0.0\AndroidManifest.xml:32:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\379e6fd7b9f7b75d565517c985b1d207\firebase-iid-20.0.0\AndroidManifest.xml:32:13-34:85
+128                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+128-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\379e6fd7b9f7b75d565517c985b1d207\firebase-iid-20.0.0\AndroidManifest.xml:33:17-96
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\379e6fd7b9f7b75d565517c985b1d207\firebase-iid-20.0.0\AndroidManifest.xml:34:17-82
+130        </service>
+131
+132        <activity
+132-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\3412e4fa714470d3c3e3238ac26160d6\firebase-auth-18.1.0\AndroidManifest.xml:24:9-31:50
+133            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+133-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\3412e4fa714470d3c3e3238ac26160d6\firebase-auth-18.1.0\AndroidManifest.xml:25:13-85
+134            android:excludeFromRecents="true"
+134-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\3412e4fa714470d3c3e3238ac26160d6\firebase-auth-18.1.0\AndroidManifest.xml:26:13-46
+135            android:exported="true"
+135-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\3412e4fa714470d3c3e3238ac26160d6\firebase-auth-18.1.0\AndroidManifest.xml:27:13-36
+136            android:launchMode="singleTask"
+136-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\3412e4fa714470d3c3e3238ac26160d6\firebase-auth-18.1.0\AndroidManifest.xml:28:13-44
+137            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+137-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\3412e4fa714470d3c3e3238ac26160d6\firebase-auth-18.1.0\AndroidManifest.xml:29:13-102
+138            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+138-->[com.google.firebase:firebase-auth:18.1.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\3412e4fa714470d3c3e3238ac26160d6\firebase-auth-18.1.0\AndroidManifest.xml:30:13-72
+139        <!--
+140             FirebaseMessagingService performs security checks at runtime,
+141             but set to not exported to explicitly avoid allowing another app to call it.
+142        -->
+143        <service
+143-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\505f7e607872de20a698a2ebda0f01ec\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:28:9-34:19
+144            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+144-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\505f7e607872de20a698a2ebda0f01ec\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:29:13-82
+145            android:exported="false" >
+145-->[com.google.firebase:firebase-messaging:20.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\505f7e607872de20a698a2ebda0f01ec\jetified-firebase-messaging-20.0.0\AndroidManifest.xml:30:13-37
+146            <intent-filter android:priority="-500" >
+146-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:81:13-83:29
+147                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+147-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:82:17-78
+147-->C:\Users\mohda\AndroidStudioProjects\MotorcycleAssist-master\app\src\main\AndroidManifest.xml:82:25-75
+148            </intent-filter>
+149        </service>
+150
+151        <meta-data
+151-->[com.google.maps.android:android-maps-utils:0.5] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\1e6bf69ef427a787185079027d6ce835\jetified-android-maps-utils-0.5\AndroidManifest.xml:8:9-10:69
+152            android:name="com.google.android.gms.version"
+152-->[com.google.maps.android:android-maps-utils:0.5] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\1e6bf69ef427a787185079027d6ce835\jetified-android-maps-utils-0.5\AndroidManifest.xml:9:13-58
+153            android:value="@integer/google_play_services_version" />
+153-->[com.google.maps.android:android-maps-utils:0.5] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\1e6bf69ef427a787185079027d6ce835\jetified-android-maps-utils-0.5\AndroidManifest.xml:10:13-66
+154
+155        <receiver
+155-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\379e6fd7b9f7b75d565517c985b1d207\firebase-iid-20.0.0\AndroidManifest.xml:37:9-44:20
+156            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+156-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\379e6fd7b9f7b75d565517c985b1d207\firebase-iid-20.0.0\AndroidManifest.xml:38:13-78
+157            android:exported="true"
+157-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\379e6fd7b9f7b75d565517c985b1d207\firebase-iid-20.0.0\AndroidManifest.xml:39:13-36
+158            android:permission="com.google.android.c2dm.permission.SEND" >
+158-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\379e6fd7b9f7b75d565517c985b1d207\firebase-iid-20.0.0\AndroidManifest.xml:40:13-73
+159            <intent-filter>
+159-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\379e6fd7b9f7b75d565517c985b1d207\firebase-iid-20.0.0\AndroidManifest.xml:41:13-43:29
+160                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+160-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\379e6fd7b9f7b75d565517c985b1d207\firebase-iid-20.0.0\AndroidManifest.xml:42:17-81
+160-->[com.google.firebase:firebase-iid:20.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\379e6fd7b9f7b75d565517c985b1d207\firebase-iid-20.0.0\AndroidManifest.xml:42:25-78
+161            </intent-filter>
+162        </receiver>
+163        <receiver
+163-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:29:9-33:20
+164            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+164-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:30:13-85
+165            android:enabled="true"
+165-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:31:13-35
+166            android:exported="false" >
+166-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:32:13-37
+167        </receiver>
+168        <receiver
+168-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:34:9-42:20
+169            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+169-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:35:13-100
+170            android:enabled="true"
+170-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:36:13-35
+171            android:exported="true"
+171-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:37:13-36
+172            android:permission="android.permission.INSTALL_PACKAGES" >
+172-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:38:13-69
+173            <intent-filter>
+173-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:39:13-41:29
+174                <action android:name="com.android.vending.INSTALL_REFERRER" />
+174-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:40:17-79
+174-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:40:25-76
+175            </intent-filter>
+176        </receiver>
+177
+178        <service
+178-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:44:9-47:40
+179            android:name="com.google.android.gms.measurement.AppMeasurementService"
+179-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:45:13-84
+180            android:enabled="true"
+180-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:46:13-35
+181            android:exported="false" />
+181-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:47:13-37
+182        <service
+182-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:48:9-52:72
+183            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+183-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:49:13-87
+184            android:enabled="true"
+184-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:50:13-35
+185            android:exported="false"
+185-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:51:13-37
+186            android:permission="android.permission.BIND_JOB_SERVICE" />
+186-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\607b870b98d914cd739a438c2835fcda\play-services-measurement-17.0.0\AndroidManifest.xml:52:13-69
+187
+188        <activity
+188-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\9aa43e4d859846d255e0c2916968f517\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+189            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+189-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\9aa43e4d859846d255e0c2916968f517\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+190            android:exported="false"
+190-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\9aa43e4d859846d255e0c2916968f517\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+191            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+191-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\9aa43e4d859846d255e0c2916968f517\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+192
+193        <provider
+193-->[com.google.firebase:firebase-common:19.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\4221b05f225ae7eb99b16f60aa675266\firebase-common-19.0.0\AndroidManifest.xml:12:9-16:39
+194            android:name="com.google.firebase.provider.FirebaseInitProvider"
+194-->[com.google.firebase:firebase-common:19.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\4221b05f225ae7eb99b16f60aa675266\firebase-common-19.0.0\AndroidManifest.xml:13:13-77
+195            android:authorities="com.afiq.motorcycleassist.firebaseinitprovider"
+195-->[com.google.firebase:firebase-common:19.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\4221b05f225ae7eb99b16f60aa675266\firebase-common-19.0.0\AndroidManifest.xml:14:13-72
+196            android:exported="false"
+196-->[com.google.firebase:firebase-common:19.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\4221b05f225ae7eb99b16f60aa675266\firebase-common-19.0.0\AndroidManifest.xml:15:13-37
+197            android:initOrder="100" />
+197-->[com.google.firebase:firebase-common:19.0.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\4221b05f225ae7eb99b16f60aa675266\firebase-common-19.0.0\AndroidManifest.xml:16:13-36
+198        <provider
+198-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\e54fda396043c32bb0891f745cdebaa5\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+199            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+199-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\e54fda396043c32bb0891f745cdebaa5\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+200            android:authorities="com.afiq.motorcycleassist.lifecycle-process"
+200-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\e54fda396043c32bb0891f745cdebaa5\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+201            android:exported="false"
+201-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\e54fda396043c32bb0891f745cdebaa5\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+202            android:multiprocess="true" />
+202-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\mohda\.gradle\caches\transforms-2\files-2.1\e54fda396043c32bb0891f745cdebaa5\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+203    </application>
+204
+205</manifest>

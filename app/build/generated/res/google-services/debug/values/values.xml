@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">313439380784-d6g5uj1n7g5q07qiedk1ijdrdqpbfrnf.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://motorcycleassist-d7d26.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">313439380784</string>
+    <string name="google_api_key" translatable="false">AIzaSyAlzCWuyxApv09WoR2rGHN2Hg5GptghX70</string>
+    <string name="google_app_id" translatable="false">1:313439380784:android:8f2b8ef24c8cf94f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAlzCWuyxApv09WoR2rGHN2Hg5GptghX70</string>
+    <string name="google_storage_bucket" translatable="false">motorcycleassist-d7d26.appspot.com</string>
+    <string name="project_id" translatable="false">motorcycleassist-d7d26</string>
+</resources>
